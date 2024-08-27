@@ -12,7 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Escolha um número entre 0 e 10</Text>
-      <Button title="Sortear" style={styles.buttonSorteio} onPress={generateRandomNumber} />
+      <Button title="Sortear" onPress={generateRandomNumber} />
       <Text style={styles.randomNumberText}>
         {randomNumber !== null ? `Número sorteado: ${randomNumber}` : 'Nenhum número sorteado'}
       </Text>
@@ -33,9 +33,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: 160,
     textAlign: 'center',
-  },
-  buttonSorteio: {
-    backgroundColor: "red",
   },
   
 });
